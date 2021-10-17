@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Продажа частных вертолетов в России.</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="/local/templates/vertolet.ru/assets/images/favicon/favicon-32x32.png"
+		sizes="32x32" />
+	<link rel="icon" type="image/png" href="/local/templates/vertolet.ru/assets/images/favicon/favicon-16x16.png"
+		sizes="16x16" />
+
+	<!-- /Favicons -->
+</head>
+
+
+<body>
+	<div class="main">
+		<div class="header is-absolute" data-app="header">
+			<div class="header__wrap">
+				<div class="wrapper">
+					<div class="header__container">
+						<a class="header__burger" href="#">
+							<i></i><i></i><i></i>
+						</a>
+						<div class="header__logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="Hell Avia">
+							</a>
+						</div>
+						<div class="header__menu">
+							<div class="header__menu__container"><a class="header__menu__close" href="#">
+									<svg id="menu-close" viewBox="0 0 41 41">
+										<path
+											d="M4.63 2.353a3.1 3.1 0 0 1-2.318 2.318A3.1 3.1 0 0 1-.007 2.353 3.035 3.035 0 0 1 2.312.035 3.035 3.035 0 0 1 4.63 2.353zM2.353 41.007a3.035 3.035 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.319 3.037 3.037 0 0 1 2.319 2.319 3.036 3.036 0 0 1-2.319 2.318zm6.7-34.269a3.035 3.035 0 0 1-2.318 2.318 3.035 3.035 0 0 1-2.318-2.318 3.1 3.1 0 0 1 2.318-2.319 3.1 3.1 0 0 1 2.32 2.319zM6.78 36.581a3.035 3.035 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.32 2.318 3.036 3.036 0 0 1-2.32 2.318zm4.426-4.468a3.037 3.037 0 0 1-2.319-2.318 3.036 3.036 0 0 1 2.319-2.319 3.036 3.036 0 0 1 2.318 2.319 3.037 3.037 0 0 1-2.318 2.318zm2.276-20.908a3.045 3.045 0 0 1-2.276 2.318 3.045 3.045 0 0 1-2.277-2.318 3.046 3.046 0 0 1 2.277-2.318 3.046 3.046 0 0 1 2.276 2.318zm4.468 4.385a3.088 3.088 0 0 1-2.318 2.36 3.088 3.088 0 0 1-2.318-2.36 3.1 3.1 0 0 1 2.318-2.318 3.1 3.1 0 0 1 2.318 2.318zm-2.318 12.1a3.036 3.036 0 0 1-2.318-2.318 3.036 3.036 0 0 1 2.318-2.318 3.036 3.036 0 0 1 2.318 2.318 3.036 3.036 0 0 1-2.318 2.315zm4.89-4.215a3.94 3.94 0 0 1-3.035-2.993 3.942 3.942 0 0 1 3.035-2.993 3.942 3.942 0 0 1 3.034 2.993 3.94 3.94 0 0 1-3.035 2.989zm4.89-5.521a3.088 3.088 0 0 1-2.361-2.318 3.089 3.089 0 0 1 2.361-2.319 3.1 3.1 0 0 1 2.318 2.319 3.1 3.1 0 0 1-2.319 2.314zm2.277 7.418a3.036 3.036 0 0 1-2.32 2.318 3.036 3.036 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.319 2.314zm2.106-11.932a2.986 2.986 0 0 1-2.318-2.277 2.986 2.986 0 0 1 2.318-2.276 2.986 2.986 0 0 1 2.318 2.276 2.986 2.986 0 0 1-2.318 2.277zm2.318 16.355a2.987 2.987 0 0 1-2.276 2.318 2.989 2.989 0 0 1-2.277-2.318 2.988 2.988 0 0 1 2.277-2.319 2.986 2.986 0 0 1 2.276 2.319zm2.15-20.739a3.035 3.035 0 0 1-2.318-2.318 3.037 3.037 0 0 1 2.318-2.319 3.1 3.1 0 0 1 2.32 2.319 3.1 3.1 0 0 1-2.321 2.318zm2.32 25.164a3.035 3.035 0 0 1-2.32 2.318 3.035 3.035 0 0 1-2.318-2.318 3.1 3.1 0 0 1 2.317-2.32 3.1 3.1 0 0 1 2.32 2.32zm2.065-29.591a3.1 3.1 0 0 1-2.318-2.318 3.1 3.1 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.318 2.318 3.035 3.035 0 0 1-2.319 2.318zm2.36 34.018a3.035 3.035 0 0 1-2.318 2.318 3.035 3.035 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.317 2.318z">
+										</path>
+									</svg>
+								</a>
+								<div class="header__menu__logo"><img src="images/logo.png" alt=""></div>
+
+
+								<ul>
+									<li class="has-submenu"><span><a href="#helsel">Продажа
+												вертолетов</a></span>
+										<ul>
+											<li><a href="#!">Каталог вертолетов</a></li>
+											<li><a href="../selling/trade-in/index.htm">Trade-in</a></li>
+											<li><a href="#!">Кредитование и лизинг</a></li>
+										</ul>
+									</li>
+									<li class="has-submenu"><span><a href="#scool">Обучение - АУЦ</a></span>
+										<ul>
+											<li><a href="#!">Основные сведения</a></li>
+											<li><a href="#!">Структура АУЦ</a></li>
+											<li><a href="#!">Руководство / Педагогический
+													состав</a></li>
+											<li><a href="#!">Документы</a></li>
+											<li><a href="#!">Материально-техническая
+													база</a></li>
+											<li><a href="#!">Образование</a></li>
+											<li><a href="#!">Платные образовательные
+													услуги</a></li>
+											<li><a href="#!">ВЛЭК</a></li>
+											<li><a href="#!">Контакты</a></li>
+											<li><a href="#">Библиотека</a></li>
+										</ul>
+									</li>
+									<li class="has-submenu"><span><a href="excursions/flight/index.htm">Экскурсии</a></span>
+										<ul>
+											<li><a href="#!">Экскурсионные программы</a></li>
+											<li><a href="#!">Подарочные сертификаты</a></li>
+											<li><a href="#!">Детские
+													экскурсии</a></li>
+										</ul>
+									</li>
+									<li class="has-submenu"><span><a href="services/rental/index.htm">Наши услуги</a></span>
+										<ul>
+											<li><a href="#!">Аренда</a></li>
+											<li><a href="#!">Обслуживание</a></li>
+											<li><a href="#!">Базирование</a></li>
+											<li><a href="#!">Заправка</a></li>
+											<li><a href="#!">Запчасти</a></li>
+											<li><a href="#!">Капитальный ремонт</a></li>
+											<li><a href="#!">Страхование</a></li>
+										</ul>
+									</li>
+									<li class="has-submenu"><span><a href="air-club/about-club/index.htm">Аэроклуб</a></span>
+										<ul>
+											<li><a href="#!">О клубе</a></li>
+											<li><a href="#!">Авиапутешествия</a></li>
+											<li><a href="#!">Клубная жизнь</a></li>
+											<li><a href="#!">Мировой рекорд</a></li>
+											<li><a href="#!">ВПСО «Ангел»</a></li>
+										</ul>
+									</li>
+									<li class="has-submenu"><span><a href="heliport/contacts/index.htm">О Нас</a></span>
+										<ul>
+											<li><a href="#!">Новости</a></li>
+											<li><a href="#!">Фотогалерея</a></li>
+											<li><a href="#!">Метеосводка</a></li>
+											<li><a href="#!">Вакансии</a></li>
+											<li><a href="#!">Погода online</a></li>
+											<li><a href="/contacts/index.htm">Контакты</a></li>
+										</ul>
+									</li>
+									<li><span><a href="#!">Ресторан «Вертушка»</a></span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__right">
+							<div class="header__phone">
+								<div class="header__phone__number"><a href="tel:+74959802211">+7 (495) 980-2211</a></div>
+								<div class="header__phone__link"><a class="js-open-callback" href="#!"
+										data-title="Обратный звонок" data-subject="обратный звонок" data-msg="Перезвоните мне"
+										data-fancybox="">Обратный звонок</a></div>
+								<div class="header__phone__link"><a class="js-open-callback" href="#!"
+										data-title="Стать партнером" data-subject="стать партнером"
+										data-msg="Я хочу стать Вашим партнером" data-fancybox="">Стать партнером</a></div>
+								<div class="header__phone__link"><a href="#!">Погода online</a></div>
+							</div><a class="header__call" href="tel:+74959802200"></a>
+							<div class="header__search"><a class="header__search__open" href="#"></a>
+								<form class="header__search__box" action="/search/index.php">
+									<input class="header__search__field" type="text" placeholder="поиск по сайту" name="q">
+									<input class="header__search__submit" type="submit" value="">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="index">
+				<div class="index__intro"
+					style="background-image:url(upload/iblock/acd/acd4a5010e507ba480cc52ef17389b18.jpg)">
+					<div class="wrapper">
+						<div class="index__intro__container">
+							<div class="index__intro__label">
+								Крупнейший дилерский центр
+							</div>
+							<div class="index__intro__title">
+								Airbus в России!
+							</div>
+							<div class="index__intro__btn">
+								<a class="js-open-callback" href="#!" data-title="Заказать полет" data-subject="5" data-msg=""
+									data-fancybox="">
+									<span>Заказать полет</span>
+								</a>
+								<a href="#!">
+									<span>Подобрать вертолет</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index__sell">
+					<div class="wrapper">
+						<div class="index__title" id="helsel">Продажа вертолетов</div>
+						<div class="index__sell__menu"><a href="#!"><span>Каталог
+									вертолетов</span></a><a href="#!"><span>Trade-in</span></a><a href="#!"><span>Кредитование и
+									лизинг</span></a></div>
+						<div class="index__sell__list">
+							<div class="index__sell__item">
+								<div class="item-image"><span
+										style="background-image:url(upload/iblock/fec/fec4891317600a9fdedd79f2384e7aaf.jpg)"></span>
+								</div>
+								<div class="item-name"><a href="#!">Вертолеты
+										Robinson</a>
+								</div>
+							</div>
+							<div class="index__sell__item">
+								<div class="item-image"><span
+										style="background-image:url(images/airbus-helicopters_web.jpg)"></span>
+								</div>
+								<div class="item-name"><a href="#!">Вертолеты Airbus</a>
+								</div>
+							</div>
+							<div class="index__sell__item">
+								<div class="item-image"><span
+										style="background-image:url(upload/iblock/deb/deb6a3a4ec0ce97c8fa26313cc78b327.jpg)"></span>
+								</div>
+								<div class="item-name"><a href="#!">Вертолеты Bell</a>
+								</div>
+							</div>
+							<div class="index__sell__item">
+								<div class="item-image">
+									<span style="background-image:url(upload/iblock/386/386077cd580a7fc90e15c42adb7a57ad.jpg)">
+									</span>
+								</div>
+								<div class="item-name"><a href="#!">Agusta
+										Westland</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index__school" id="scool>
+					<div class=" wrapper">
+					<div class="index__title" ">Школа Пилотов</div>
+						<div class=" index__school__list"><a href="#!"><span>Авиационный Учебный
+								Центр</span></a><a href="#!"><span>Преподаватели
+								АУЦ</span></a><a href="#!"><span>Программы обучения</span></a>
+						<a href="#!"><span>Тестирование пилотов</span></a>
+
+						<a href="#!"><span>Свидетельство пилота</span></a><a href="#!"><span>ВЛЭК</span></a><a
+							href="#!"><span>Полезная информация (статьи)</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="index__info" style="background-image:url(upload/iblock/edf/edfe324f0c8c4dc959cf3b339e7ff6b6.jpg)">
+				<div class="wrapper">
+					<div class="index__info__caption">
+						<div class="index__info__text">ХелАвиа - современная школа пилотов, полностью
+							соответствующая требованиям воздушного законодательства Российской Федерации.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="index__programs">
+				<div class="index__programs__arrow"></div>
+				<div class="wrapper">
+					<div class="index__title">Экскурсионные программы</div>
+					<div class="index__programs__list">
+						<div class="index__programs__item">
+							<div class="item-image"><span
+									style="background-image:url(upload/resize_cache/iblock/578/343_274_1/57826253afc98dfc0527bc56775c0f11.jpg)"></span>
+							</div>
+							<div class="item-name"><a href="#!">Детские экскурсионные
+									программы</a>
+							</div>
+						</div>
+						<div class="index__programs__item">
+							<div class="item-image"><span
+									style="background-image:url(upload/iblock/e4d/e4d52251e8bc1d28e1e1d5de0341c4c5.jpg)"></span>
+							</div>
+							<div class="item-name"><a href="#!">Экскурсионные полеты</a>
+							</div>
+						</div>
+						<div class="index__programs__item">
+							<div class="item-image"><span
+									style="background-image:url(upload/iblock/3a8/3a84496941f6612c3109880e95b95226.jpg)"></span>
+							</div>
+							<div class="item-name"><a href="#!">Подарочные сертификаты</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="index__services">
+				<div class="wrapper">
+					<div class="index__title">Услуги авиакомплекса</div>
+					<div class="index__services__row">
+						<div class="index__services__col">
+							<a class="index__services__item" href="#!">
+								<div class="item-icon">
+									<img src="../images/index-services-icon-1.png" alt="">
+								</div>
+								<div class="item-name">Аренда</div>
+							</a>
+						</div>
+						<div class="index__services__col"><a class="index__services__item" href="#!">
+								<div class="item-icon"><img src="../images/index-services-icon-2.png" alt=""></div>
+								<div class="item-name">Обслуживание</div>
+							</a></div>
+						<div class="index__services__col"><a class="index__services__item" href="#!">
+								<div class="item-icon"><img src="../images/index-services-icon-3.png" alt=""></div>
+								<div class="item-name">Базирование</div>
+							</a></div>
+						<div class="index__services__col"><a class="index__services__item" href="#!">
+								<div class="item-icon"><img src="../images/index-services-icon-4.png" alt=""></div>
+								<div class="item-name">Заправка</div>
+							</a></div>
+						<div class="index__services__col"><a class="index__services__item" href="#!">
+								<div class="item-icon"><img src="../images/index-services-icon-5.png" alt=""></div>
+								<div class="item-name">Запчасти</div>
+							</a></div>
+						<div class="index__services__col"><a class="index__services__item" href="#!">
+								<div class="item-icon"><img src="../images/index-services-icon-6.png" alt=""></div>
+								<div class="item-name">Капитальный ремонт</div>
+							</a></div>
+						<div class="index__services__col"><a class="index__services__item" href="#!">
+								<div class="item-icon"><img src="../images/index-services-icon-7.png" alt=""></div>
+								<div class="item-name">Страхование</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="index__club" data-app="index-club">
+				<div class="wrapper">
+					<div class="index__title">Аэроклуб</div>
+				</div>
+				<div class="index__club__slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="index__club__slider__item">
+									<div class="item-image"><span
+											style="background-image:url(upload/resize_cache/iblock/b8b/572_354_1/b8b30a9aecec17e01dcf9c53a4514ac0.JPG)"></span>
+									</div>
+									<div class="item-caption">
+										<div class="item-text">Открывайте мир с нами!&nbsp;</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="index__club__slider__item">
+									<div class="item-image"><span
+											style="background-image:url(upload/resize_cache/iblock/786/572_354_1/7867bc5d555ed243049bc91eeb57cf69.JPG)"></span>
+									</div>
+									<div class="item-caption">
+										<div class="item-text">Мировые рекорды и путешествия по всему миру&nbsp;</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="index__club__slider__item">
+									<div class="item-image"><span
+											style="background-image:url(upload/resize_cache/iblock/c18/572_354_1/c18b6bf138a627fe40c2b28a2287a985.JPG)"></span>
+									</div>
+									<div class="item-caption">
+										<div class="item-text">Маршруты вертолетных путешествий не знают границ</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="index__club__slider__item">
+									<div class="item-image"><span
+											style="background-image:url(upload/iblock/680/6802b7879994365b959216b30232f366.jpg)"></span>
+									</div>
+									<div class="item-caption">
+										<div class="item-text">Самое крупное в России сообщество пилотов !&nbsp;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="index__club__slider__prev" href="#">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+							style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+			c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+			L143.492,221.863z" />
+								</g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+						</svg>
+
+					</a>
+					<a class="index__club__slider__next" href="#">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+							style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+			L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+			C342.889,227.058,342.889,216.255,336.226,209.591z" />
+								</g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+							<g>
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<div class="index__news" data-app="index-news">
+				<div class="wrapper">
+					<div class="index__title">Новости</div>
+					<div class="index__news__slider">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="index__news__slider__item" href="#!" id="bx_3485106786_1629">
+										<div class="item-image"
+											style="background-image:url(upload/resize_cache/iblock/a8e/280_200_1/a8ed55e7b43bc9be45e22ce6846da245.jpeg)">
+										</div>
+										<div class="item-caption">
+											<div class="item-date">09.08.2021</div>
+											<div class="item-name">ЭТО ПРОСТО ПРАЗДНИК КАКОЙ-ТО!</div>
+											<div class="item-text">
+												Дорогие пилоты, мы рады отпраздновать День Воздушного Флот�...</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide"><a class="index__news__slider__item" href="#!"
+										id="bx_3485106786_1628">
+										<div class="item-image"
+											style="background-image:url(upload/resize_cache/iblock/d10/280_200_1/d10b4df734ce983bd8dee4b44101f4cf.jpg)">
+										</div>
+										<div class="item-caption">
+											<div class="item-date">16.06.2021</div>
+											<div class="item-name">МАСТЕР-КЛАСС ПО ЧЕЛОВЕЧЕСКОМУ ФАКТОРУ</div>
+											<div class="item-text">Дорогие курсанты и выпускники АУЦ ХЕЛАВИА,&nbsp;&nbsp;19
+												ию...</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide"><a class="index__news__slider__item" href="#!"
+										id="bx_3485106786_1627">
+										<div class="item-image"
+											style="background-image:url(upload/resize_cache/iblock/422/280_200_1/422f49227be237267685dfac4d84af26.jpg)">
+										</div>
+										<div class="item-caption">
+											<div class="item-date">15.06.2021</div>
+											<div class="item-name">ЧТО ДЕЛАТЬ ПОСЛЕ ПОКУПКИ ВС?</div>
+											<div class="item-text">Первое, на что вы должны обратить внимание сразу после
+												покуп...</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide"><a class="index__news__slider__item" href="#!"
+										id="bx_3485106786_1626">
+										<div class="item-image"
+											style="background-image:url(upload/resize_cache/iblock/ea8/280_200_1/ea866c162f5f6f371ac9c04216f98969.png)">
+										</div>
+										<div class="item-caption">
+											<div class="item-date">09.06.2021</div>
+											<div class="item-name">ЛЕТНИЙ ЛАГЕРЬ ДЛЯ АВИАТОРОВ</div>
+											<div class="item-text">Возможность вернуться в те времена, в которых вы, возможно,
+												н...</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide"><a class="index__news__slider__item" href="#!"
+										id="bx_3485106786_1625">
+										<div class="item-image"
+											style="background-image:url(upload/resize_cache/iblock/2d3/280_200_1/2d38effd755fb8e434c1d2eb32e24ddf.JPG)">
+										</div>
+										<div class="item-caption">
+											<div class="item-date">11.05.2021</div>
+											<div class="item-name">ВЕРТОСЛЁТ'21</div>
+											<div class="item-text">Приглашаем вертолётчиков и их друзей 22 мая 2021г. в ХелАвиа
+												И�...</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="index__news__slider__prev" href="#">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+								style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+			c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+			L143.492,221.863z" />
+									</g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+							</svg>
+
+						</a>
+						<a class="index__news__slider__next" href="#">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+								style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+			L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+			C342.889,227.058,342.889,216.255,336.226,209.591z" />
+									</g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+							</svg>
+
+						</a>
+					</div>
+					<div class="index__news__all"><a href="#!">Все новости</a></div>
+				</div>
+			</div>
+
+			<div class="index__contacts" data-app="index-contacts">
+				<div class="index__contacts__map">
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af5f81725a946fdfdc741ec94801520225d43dc9acf643316bf9140a120f481fa&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+				<div class="wrapper">
+					<div class="index__title">Контакты</div>
+
+					<div class="index__contacts__list">
+						<div class="index__contacts__list__title">Координаты базы</div>
+						<ul>
+							<li>Пуньково – УУМР* (UUMR) <br>52° 52,897´ C <br>034° 48,602´ B</li>
+							<li>«Пуньково-вышка» 229,2</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer" data-app="footer">
+		<div class="footer__top">
+			<div class="wrapper">
+				<div class="footer__top__container">
+					<div class="footer__logo">
+						<img src="../images/logo.png" alt="Hell Avia">
+					</div>
+					<div class="footer__phone">
+						<span class="footer__phone__number"><a href="tel:+74959802211">+7 (495) 980-22-11</a></span>
+						<span class="footer__phone__city">(Москва)</span>
+						<span class="footer__phone__schedule">Работаем с 9:00–21:00</span>
+					</div>
+					<div class="footer__callback-link">
+						<a class="js-open-callback" href="#!" data-title="Обратный звонок" data-subject="обратный звонок"
+							data-msg="Перезвоните мне" data-fancybox="">Заказать обратный
+							звонок</a>
+					</div>
+					<div class="footer__partner-link">
+						<a class="js-open-callback" href="#!" data-title="Стать партнером" data-subject="стать партнером"
+							data-msg="Я хочу стать Вашим партнером" data-fancybox="">Стать
+							партнером</a>
+					</div>
+				</div>
+				<div class="footer__middle">
+					<div class="footer__menu">
+
+
+						<div class="footer__menu__col">
+							<div class="footer__menu__label"><a href="#!">Продажа вертолетов</a>
+							</div>
+							<ul>
+								<li><a href="#!">Каталог вертолетов</a></li>
+								<li><a href="#!">Trade-in</a></li>
+								<li><a href="#!">Кредитование и лизинг</a></li>
+							</ul>
+						</div>
+						<div class="footer__menu__col">
+							<div class="footer__menu__label"><a href="#!">Обучение - АУЦ</a></div>
+							<ul>
+								<li><a href="#!">Основные сведения</a></li>
+								<li><a href="#!">Структура АУЦ</a></li>
+								<li><a href="#!">Руководство / Педагогический состав</a>
+								</li>
+								<li><a href="#!">Документы</a></li>
+								<li><a href="#!">Материально-техническая база</a>
+								</li>
+								<li><a href="#!">Образование</a></li>
+								<li><a href="#!">Платные образовательные услуги</a>
+								</li>
+								<li><a href="#!">ВЛЭК</a></li>
+								<li><a href="#!">Контакты</a></li>
+								<li><a href="#!">Библиотека</a></li>
+							</ul>
+						</div>
+						<div class="footer__menu__col">
+							<div class="footer__menu__label"><a href="#!">Экскурсии</a></div>
+							<ul>
+								<li><a href="#!">Экскурсионные программы</a></li>
+								<li><a href="#!">Подарочные сертификаты</a></li>
+								<li><a href="#!">Детские
+										экскурсии</a></li>
+							</ul>
+						</div>
+						<div class="footer__menu__col">
+							<div class="footer__menu__label"><a href="#!">Наши услуги</a></div>
+							<ul>
+								<li><a href="#!">Аренда</a></li>
+								<li><a href="#!">Обслуживание</a></li>
+								<li><a href="#!">Базирование</a></li>
+								<li><a href="#!">Заправка</a></li>
+								<li><a href="#!">Запчасти</a></li>
+								<li><a href="#!">Капитальный ремонт</a></li>
+								<li><a href="#!">Страхование</a></li>
+							</ul>
+						</div>
+						<div class="footer__menu__col">
+							<div class="footer__menu__label"><a href="#!">Аэроклуб</a></div>
+							<ul>
+								<li><a href="#!">О клубе</a></li>
+								<li><a href="#!">Авиапутешествия</a></li>
+								<li><a href="#!">Клубная жизнь</a></li>
+								<li><a href="#!">Мировой рекорд</a></li>
+								<li><a href="#!">ВПСО «Ангел»</a></li>
+							</ul>
+						</div>
+						<div class="footer__menu__col">
+							<div class="footer__menu__label"><a href="/contacts/index.htm">О Нас</a></div>
+							<ul>
+								<li><a href="#!">Новости</a></li>
+								<li><a href="#!">Фотогалерея</a></li>
+								<li><a href="#!">Метеосводка</a></li>
+								<li><a href="#!">Вакансии</a></li>
+								<li><a href="#!">Погода online</a></li>
+								<li><a href="#!">Контакты</a></li>
+							</ul>
+							<div class="footer__menu__label"><a href="#!">Ресторан «ВЕРТУШКА»</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts__row">
+							<div class="footer__contacts__col">
+								<div class="footer__contacts__label">адрес</div>
+								<div class="footer__contacts__text">143521, Московская область,<br>Ступинский
+									район,<br>Пуньково, с/пос. Лучинский<br>дер. Крюково, ул. Махно, стр.1<br>(37 км
+									Каширского шоссе)</div>
+							</div>
+							<div class="footer__contacts__col">
+								<div class="footer__contacts__label">e-mail</div>
+								<div class="footer__contacts__text"><a href="mailto:info@hellavia.ru">info@hellavia.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="wrapper">
+				<div class="footer__partners">
+					<div class="footer__partners__title">наши партнеры</div>
+					<div class="footer__partners__slider">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="footer__partners__slider__item"><a target="_blank" href="#!"><img
+												src="upload/iblock/f75/f75591c0dc235187b70f9b9ca637c592.png" alt="RR"></a></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="footer__partners__slider__item"><a target="_blank" href="#!"><img
+												src="upload/iblock/84b/84b0d73a76f1c6e39201a52124c65990.png" alt="robinson"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="footer__partners__slider__item"><a target="_blank" href="#!"><img
+												src="upload/iblock/337/3370d78c333b18e7d19dcb61f68f454c.png" alt="bell"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="footer__partners__slider__item"><a target="_blank" href="#!"><img
+												src="upload/iblock/431/4310477fd4454e301352a1288a455ea6.png" alt="agusta"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="footer__partners__slider__item"><a target="_blank" href="#!"><img
+												src="upload/iblock/137/137e1c1f306e778c2e5bbaf492b15264.png" alt="airbus"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="footer__partners__slider__prev" href="#">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+								style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+			c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+			L143.492,221.863z" />
+									</g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+							</svg>
+						</a>
+						<a class="footer__partners__slider__next" href="#">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+								style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+			L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+			C342.889,227.058,342.889,216.255,336.226,209.591z" />
+									</g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+							</svg>
+
+						</a>
+					</div>
+					<ul class="footer__partners__list">
+						<li>
+							<a target="_blank" href="#!"><img src="upload/iblock/f75/f75591c0dc235187b70f9b9ca637c592.png"
+									alt="RR"></a>
+						</li>
+						<li>
+							<a target="_blank" href="#!"><img src="upload/iblock/84b/84b0d73a76f1c6e39201a52124c65990.png"
+									alt="robinson"></a>
+						</li>
+						<li>
+							<a target="_blank" href="#!"><img src="upload/iblock/337/3370d78c333b18e7d19dcb61f68f454c.png"
+									alt="bell"></a>
+						</li>
+						<li>
+							<a target="_blank" href="#!"><img src="upload/iblock/431/4310477fd4454e301352a1288a455ea6.png"
+									alt="agusta"></a>
+						</li>
+						<li>
+							<a target="_blank" href="#!"><img src="upload/iblock/137/137e1c1f306e778c2e5bbaf492b15264.png"
+									alt="airbus"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom__container">
+					<div class="footer__copy">
+						<div class="footer__copy__label">© Hell Avia</div>
+						Представленная на сайте информация не&nbsp;является публичной офертой. Услуги предоставляются
+						только членам клуба.<br>
+						<a href="#!">Политика конфиденциальности</a>
+					</div>
+					<ul class="footer__social">
+						<li><a href="#!" target="_blank"><img src="../images/f-fb.png" alt=""></a>
+						</li>
+						<li><a href="#!" target="_blank"><img src="../images/f-youtube.png" alt=""></a>
+						</li>
+						<li><a href="#!" target="_blank"><img src="../images/f-inst.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- *footer end -->
+
+	<!--<div class="hidden">
+			<div class="fancybox-placeholder" style="display: none;">
+			</div>
+		</div>
+	</div>
+
+	<div class="fancybox-wrap fancybox-desktop-type-inline 		fancybox-opened" tabindex="-1"
+		style="width: 525px; height: auto; position: fixed; top: 58px; left: 148px; opacity: 1; overflow: visible;">
+		<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
+			<div class="fancybox-outer">
+				<div class="fancybox-inner" style="overflow: auto; width: 525px; height: auto;">
+					<div class="modal" id="callback-1" data-app="modal-form">
+						<div class="modal__title js-callback-title">Обратный звонок</div>
+						<form class="modal__form" action="/local/templates/vertolet.ru/ajax/callback.php" data-app="callback"
+							method="post">
+							<div class="modal__form__input">
+								<input type="text" placeholder="ФИО" name="form_text_1" required="">
+							</div>
+							<div class="modal__form__input">
+								<input name="form_text_2" type="tel" placeholder="Контактный телефон" data-app="mask"
+									data-mask="+7 (999) 999 99-99" required="">
+							</div>
+							<div class="modal__form__select">
+								<select class="js-callback-subject select2-hidden-accessible" name="form_text_3"
+									data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option data-select2-id="3">Выбрать тему обращения</option>
+									<option value="обратный звонок" data-select2-id="4">обратный звонок</option>
+									<option value="стать партнером" data-select2-id="5">стать партнером</option>
+									<option value="покупка вертолета">покупка вертолета</option>
+									<option value="аренда вертолета">аренда вертолета</option>
+									<option value="обучение пилотированию">обучение пилотированию</option>
+									<option value="вертолетные экскурсии">вертолетные экскурсии</option>
+									<option value="услуги вертолетного комплекса">услуги вертолетного комплекса</option>
+									<option value="услуги ресторана «Вертушка»">услуги ресторана «Стрекоза»</option>
+								</select><span class="select2 select2-container select2-container--default" dir="ltr"
+									data-select2-id="2" style="width: 100%;"><span class="selection"><span
+											class="select2-selection select2-selection--single" role="combobox"
+											aria-haspopup="true" aria-expanded="false" tabindex="0"
+											aria-labelledby="select2-form_text_3-s3-container"><span
+												class="select2-selection__rendered" id="select2-form_text_3-s3-container"
+												role="textbox" aria-readonly="true" title="обратный звонок">обратный
+												звонок</span><span class="select2-selection__arrow" role="presentation"><b
+													role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+										aria-hidden="true"></span></span>
+							</div>
+							<div class="modal__form__input">
+								<textarea name="form_textarea_4" class="js-callback-msg"
+									placeholder="Ваше сообщение"></textarea>
+							</div>
+							<div class="modal__form__checkbox">
+								<label>
+									<input type="checkbox" checked="" required=""><i></i><span>
+										Отправляя персональные данные из данной формы, я даю согласие на
+										<a href="/private-policy/">обработку персональных данных</a>
+									</span>
+								</label>
+							</div>
+
+							<div class="modal__form__captcha">
+								<div class="g-recaptcha" data-sitekey="6LfY1GoUAAAAAM0SRStnuMUipFNZPLi0qpG7hSOf"></div>
+							</div>
+
+							<input type="hidden" name="recaptcha_token" value="">
+							<div class="modal__form__submit">
+								<button class="modal__form__submit__btn" type="submit"
+									onclick="this.form.recaptcha_token.value = window.recaptcha.getToken()">ОТПРАВИТЬ</button>
+								<input name="form_text_5" type="hidden" value="https://vertolet.ru:443/">
+								<input name="form_id" type="hidden" value="1">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<a class="fancybox-item fancybox-close" href="javascript:;">
+				<svg id="menu-close" viewBox="0 0 41 41">
+					#shadow-root (closed)
+					<svg>
+						<path
+							d="M4.63 2.353a3.1 3.1 0 0 1-2.318 2.318A3.1 3.1 0 0 1-.007 2.353 3.035 3.035 0 0 1 2.312.035 3.035 3.035 0 0 1 4.63 2.353zM2.353 41.007a3.035 3.035 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.319 3.037 3.037 0 0 1 2.319 2.319 3.036 3.036 0 0 1-2.319 2.318zm6.7-34.269a3.035 3.035 0 0 1-2.318 2.318 3.035 3.035 0 0 1-2.318-2.318 3.1 3.1 0 0 1 2.318-2.319 3.1 3.1 0 0 1 2.32 2.319zM6.78 36.581a3.035 3.035 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.32 2.318 3.036 3.036 0 0 1-2.32 2.318zm4.426-4.468a3.037 3.037 0 0 1-2.319-2.318 3.036 3.036 0 0 1 2.319-2.319 3.036 3.036 0 0 1 2.318 2.319 3.037 3.037 0 0 1-2.318 2.318zm2.276-20.908a3.045 3.045 0 0 1-2.276 2.318 3.045 3.045 0 0 1-2.277-2.318 3.046 3.046 0 0 1 2.277-2.318 3.046 3.046 0 0 1 2.276 2.318zm4.468 4.385a3.088 3.088 0 0 1-2.318 2.36 3.088 3.088 0 0 1-2.318-2.36 3.1 3.1 0 0 1 2.318-2.318 3.1 3.1 0 0 1 2.318 2.318zm-2.318 12.1a3.036 3.036 0 0 1-2.318-2.318 3.036 3.036 0 0 1 2.318-2.318 3.036 3.036 0 0 1 2.318 2.318 3.036 3.036 0 0 1-2.318 2.315zm4.89-4.215a3.94 3.94 0 0 1-3.035-2.993 3.942 3.942 0 0 1 3.035-2.993 3.942 3.942 0 0 1 3.034 2.993 3.94 3.94 0 0 1-3.035 2.989zm4.89-5.521a3.088 3.088 0 0 1-2.361-2.318 3.089 3.089 0 0 1 2.361-2.319 3.1 3.1 0 0 1 2.318 2.319 3.1 3.1 0 0 1-2.319 2.314zm2.277 7.418a3.036 3.036 0 0 1-2.32 2.318 3.036 3.036 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.319 2.314zm2.106-11.932a2.986 2.986 0 0 1-2.318-2.277 2.986 2.986 0 0 1 2.318-2.276 2.986 2.986 0 0 1 2.318 2.276 2.986 2.986 0 0 1-2.318 2.277zm2.318 16.355a2.987 2.987 0 0 1-2.276 2.318 2.989 2.989 0 0 1-2.277-2.318 2.988 2.988 0 0 1 2.277-2.319 2.986 2.986 0 0 1 2.276 2.319zm2.15-20.739a3.035 3.035 0 0 1-2.318-2.318 3.037 3.037 0 0 1 2.318-2.319 3.1 3.1 0 0 1 2.32 2.319 3.1 3.1 0 0 1-2.321 2.318zm2.32 25.164a3.035 3.035 0 0 1-2.32 2.318 3.035 3.035 0 0 1-2.318-2.318 3.1 3.1 0 0 1 2.317-2.32 3.1 3.1 0 0 1 2.32 2.32zm2.065-29.591a3.1 3.1 0 0 1-2.318-2.318 3.1 3.1 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.318 2.318 3.035 3.035 0 0 1-2.319 2.318zm2.36 34.018a3.035 3.035 0 0 1-2.318 2.318 3.035 3.035 0 0 1-2.318-2.318 3.035 3.035 0 0 1 2.318-2.318 3.035 3.035 0 0 1 2.317 2.318z">
+						</path>
+					</svg>
+
+				</svg>
+			</a>
+		</div>
+	</div>
+	 <div class="fancybox-overlay fancybox-overlay-fixed" style="display: block; width: auto; height: auto;"></div>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/bundle.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
