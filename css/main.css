@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "/node_modules/@fancyapps/ui/dist/fancybox.css";
+/* @import "/node_modules/@fancyapps/ui/dist/fancybox.css"; */
 @font-face {
 	src: url(../fonts/ProximaNova-Light.woff2) format("woff2"), url(../fonts/ProximaNova-Light.woff) format("woff");
 	font-family: ProximaNova;
