@@ -2766,7 +2766,7 @@ button.swiper-pagination-bullet {
 .index__contacts {
 	position: relative;
 	padding: 60px 0 0px;
-	background: url('/images/carbon_bkg.png');
+	background: url('../images/carbon_bkg.png');
 }
 
 .index__contacts.index__title {
@@ -2778,7 +2778,7 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 992px) {
-	.index__contacts .index__title {
+	.index__contacts.index__title {
 		top: 60px;
 	}
 }
