@@ -2765,9 +2765,11 @@ button.swiper-pagination-bullet {
 
 .index__contacts {
 	position: relative;
+	padding: 60px 0 0px;
+	background: url('/images/carbon_bkg.png');
 }
 
-.index__contacts .index__title {
+.index__contacts.index__title {
 	position: absolute;
 	left: 0;
 	top: 30px;
