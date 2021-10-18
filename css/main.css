@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "/node_modules/@fancyapps/ui/dist/fancybox.css";
 @font-face {
 	src: url(../fonts/ProximaNova-Light.woff2) format("woff2"), url(../fonts/ProximaNova-Light.woff) format("woff");
 	font-family: ProximaNova;
@@ -40,7 +41,7 @@
 	font-weight: 400;
 	font-style: normal;
 }
-@import "/node_modules/@fancyapps/ui/dist/fancybox.css";
+
 
 article,
 aside,
@@ -180,7 +181,8 @@ button,
 input,
 select,
 textarea {
-	font: 100% inherit;
+	font: inherit;
+	font-size: 100%;
 	margin: 0;
 }
 
@@ -4120,7 +4122,7 @@ button.swiper-pagination-bullet {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	border: 5px 4px 0 solid #888 transparent transparent;
+	/* border: 5px 4px 0 solid #888 transparent transparent; */
 	height: 0;
 	left: 50%;
 	margin-left: -4px;
@@ -4387,7 +4389,7 @@ button.swiper-pagination-bullet {
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
-	border: 5px 4px 0 solid #888 transparent transparent;
+	/* border: 5px 4px 0 solid #888 transparent transparent; */
 	height: 0;
 	left: 50%;
 	margin-left: -4px;
@@ -6315,7 +6317,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .page__content hr {
-	border: 1px 0 0 solid #e5e5e5;
+	border: 1px  solid #e5e5e5;
 	margin: 0 0 35px;
 }
 
@@ -12745,7 +12747,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	font-size: 16px;
 	text-decoration: none;
 	color: #000;
-	transition: 0.25s 0;
+	transition: all 0.25s ease-out;
 }
 
 .catalog__filter__options li a:hover {
@@ -13323,7 +13325,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	padding: 5px 8px 6px;
 	text-decoration: none;
 	color: #000;
-	transition: 0.25s 0;
+	transition: all 0.25s ease-out;
 }
 
 .catalog__sort__list li a span {
